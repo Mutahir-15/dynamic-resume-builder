@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        
+        <!-- Input Form Section -->
+        <section class="form-section">
+            <form id="resumeForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience" required></textarea>
+
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" required></textarea>
+
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" name="skills" required>
+
+                <button type="button" onclick="generateResume()">Generate Resume</button>
+            </form>
+        </section>
+        
+        <!-- Resume Preview Section -->
+        <section class="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resumeOutput">
+                <!-- Dynamic Content Here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

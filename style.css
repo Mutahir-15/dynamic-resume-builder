@@ -1,0 +1,49 @@
+/* Basic styling for the container */
+.container {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Section */
+.form-section {
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+    background-color: rgb(250, 242, 242);
+}
+
+/* Input Styling */
+input[type="text"], textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #044e06;
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: white;
+    color: #044e06;
+}
+
+/* Resume Preview Section */
+.resume-preview {
+    width: 45%;
+    float: left;
+}
+
+#resumeOutput {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 200px;
+}
